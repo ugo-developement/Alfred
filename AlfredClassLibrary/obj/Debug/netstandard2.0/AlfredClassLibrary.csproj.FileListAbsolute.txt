@@ -1,0 +1,9 @@
+C:\Alfred\AlfredClassLibrary\bin\Debug\netstandard2.0\AlfredClassLibrary.deps.json
+C:\Alfred\AlfredClassLibrary\bin\Debug\netstandard2.0\AlfredClassLibrary.dll
+C:\Alfred\AlfredClassLibrary\obj\Debug\netstandard2.0\AlfredClassLibrary.csproj.CoreCompileInputs.cache
+C:\Alfred\AlfredClassLibrary\obj\Debug\netstandard2.0\AlfredClassLibrary.AssemblyInfoInputs.cache
+C:\Alfred\AlfredClassLibrary\obj\Debug\netstandard2.0\AlfredClassLibrary.AssemblyInfo.cs
+C:\Alfred\AlfredClassLibrary\bin\Debug\netstandard2.0\AlfredClassLibrary.pdb
+C:\Alfred\AlfredClassLibrary\obj\Debug\netstandard2.0\AlfredClassLibrary.dll
+C:\Alfred\AlfredClassLibrary\obj\Debug\netstandard2.0\AlfredClassLibrary.pdb
+C:\Alfred\AlfredClassLibrary\obj\Debug\netstandard2.0\AlfredClassLibrary.csprojAssemblyReference.cache
