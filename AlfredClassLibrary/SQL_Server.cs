@@ -17,7 +17,7 @@ namespace AlfredClassLibrary
          * returns the value.
          * Other functions must be sure
          * to close connection after
-         * using.
+         * using. :)
          */
 
         #region Open_Connection Method
