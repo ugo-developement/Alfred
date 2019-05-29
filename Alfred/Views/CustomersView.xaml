@@ -7,37 +7,18 @@
       xmlns:local="clr-namespace:Alfred.Views"
       xmlns:ViewModels="clr-namespace:Alfred.ViewModels" x:Class="Alfred.Views.CustomersView"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      Height="Auto" Width="Auto"
       Title="CustomersView"
       TextElement.Foreground="{DynamicResource MaterialDesignBody}"
       TextElement.FontWeight="Medium"
-      TextElement.FontSize="14"
-      >
-    <Page.DataContext>
-        <ViewModels:CustomerViewModel/>
-    </Page.DataContext>
+      TextElement.FontSize="14">
     <Page.Resources>
-        <ViewModels:CustomerViewModel x:Key="cgrid"/>
+        <ObjectDataProvider x:Key="getCustomers" ObjectType="{x:Type ViewModels:CustomerGridViewModel}" MethodName="FillGrid"></ObjectDataProvider>
     </Page.Resources>
 
-    <Grid DataContext="{StaticResource cgrid}">
-        <Grid.RowDefinitions>
-            <RowDefinition Height=".5*"/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <TextBox Style="{DynamicResource MaterialDesignOutlinedTextFieldTextBox}"
-                 Foreground="White"
-                 DataContext="{Binding NumShow}"
-                 Grid.Row="0"
-                 HorizontalAlignment="Left"
-                 VerticalAlignment="Center"
-                 MinWidth="70" Margin="20 , 59, 0, 59" Width="160" Height="32"/>
-        <Button Style="{DynamicResource MaterialDesignRaisedButton}"
-                Content="Show Customers" Grid.Row="0"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Center"
-                Command="{Binding CreateDataGrid, Mode=OneWay}"/>
-        <DataGrid Style="{DynamicResource MaterialDesignDataGrid}" Grid.Row="1">
+    <Grid Height="Auto" Width="Auto">
+        <DataGrid Height="Auto" Width="Auto" ItemsSource="{Binding Source={StaticResource getCustomers}}" IsSynchronizedWithCurrentItem="True">
+
 
         </DataGrid>
     </Grid>

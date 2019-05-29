@@ -7,3 +7,11 @@ C:\Alfred\AlfredClassLibrary\bin\Debug\netstandard2.0\AlfredClassLibrary.pdb
 C:\Alfred\AlfredClassLibrary\obj\Debug\netstandard2.0\AlfredClassLibrary.dll
 C:\Alfred\AlfredClassLibrary\obj\Debug\netstandard2.0\AlfredClassLibrary.pdb
 C:\Alfred\AlfredClassLibrary\obj\Debug\netstandard2.0\AlfredClassLibrary.csprojAssemblyReference.cache
+C:\Users\User\Source\Repos\Alfred\AlfredClassLibrary\bin\Debug\netstandard2.0\AlfredClassLibrary.deps.json
+C:\Users\User\Source\Repos\Alfred\AlfredClassLibrary\bin\Debug\netstandard2.0\AlfredClassLibrary.dll
+C:\Users\User\Source\Repos\Alfred\AlfredClassLibrary\bin\Debug\netstandard2.0\AlfredClassLibrary.pdb
+C:\Users\User\Source\Repos\Alfred\AlfredClassLibrary\obj\Debug\netstandard2.0\AlfredClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\Alfred\AlfredClassLibrary\obj\Debug\netstandard2.0\AlfredClassLibrary.AssemblyInfoInputs.cache
+C:\Users\User\Source\Repos\Alfred\AlfredClassLibrary\obj\Debug\netstandard2.0\AlfredClassLibrary.AssemblyInfo.cs
+C:\Users\User\Source\Repos\Alfred\AlfredClassLibrary\obj\Debug\netstandard2.0\AlfredClassLibrary.dll
+C:\Users\User\Source\Repos\Alfred\AlfredClassLibrary\obj\Debug\netstandard2.0\AlfredClassLibrary.pdb

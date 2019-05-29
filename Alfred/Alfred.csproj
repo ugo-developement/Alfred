@@ -56,6 +56,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -74,12 +75,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Models\CustomerModel.cs" />
-    <Compile Include="Models\CustomersPageModel.cs" />
+    <Compile Include="Models\CustomerListModel.cs" />
+    <Compile Include="Models\CustomerListModelModel.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerListModelModel.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Models\RelayCommandModel.cs" />
     <Compile Include="ViewModels\BindableBase.cs" />
     <Compile Include="ViewModels\CurrentUserViewModel.cs" />
-    <Compile Include="ViewModels\CustomerViewModel.cs" />
+    <Compile Include="ViewModels\CustomerGridViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\ButtonViewModelBase.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
@@ -137,6 +142,14 @@
     <Content Include="log4net.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Models\CustomerListModelModel.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>CustomerListModelModel.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Models\CustomerListModelModel.dbml.layout">
+      <DependentUpon>CustomerListModelModel.dbml</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -146,6 +159,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="LINQtoSQL\" />
     <Folder Include="Logs\" />
   </ItemGroup>
   <ItemGroup>
@@ -191,6 +205,9 @@
       <Project>{12758a70-afbd-484f-a402-0751861d00f8}</Project>
       <Name>AlfredClassLibrary</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

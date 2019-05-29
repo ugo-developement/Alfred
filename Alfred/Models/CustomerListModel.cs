@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Alfred.Models
 {
-    class CustomersPageModel
+    class CustomerListModel
     {
-
     }
 }
