@@ -17,7 +17,7 @@
     </Page.Resources>
 
     <Grid Height="Auto" Width="Auto">
-        <DataGrid Height="Auto" Width="Auto" ItemsSource="{Binding Source={StaticResource getCustomers}}" IsSynchronizedWithCurrentItem="True">
+        <DataGrid IsReadOnly="True" Height="Auto" Width="Auto" ItemsSource="{Binding Source={StaticResource getCustomers}}" IsSynchronizedWithCurrentItem="True">
 
 
         </DataGrid>

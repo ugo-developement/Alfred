@@ -15,3 +15,4 @@ C:\Users\User\Source\Repos\Alfred\AlfredClassLibrary\obj\Debug\netstandard2.0\Al
 C:\Users\User\Source\Repos\Alfred\AlfredClassLibrary\obj\Debug\netstandard2.0\AlfredClassLibrary.AssemblyInfo.cs
 C:\Users\User\Source\Repos\Alfred\AlfredClassLibrary\obj\Debug\netstandard2.0\AlfredClassLibrary.dll
 C:\Users\User\Source\Repos\Alfred\AlfredClassLibrary\obj\Debug\netstandard2.0\AlfredClassLibrary.pdb
+C:\Users\User\Source\Repos\Alfred\AlfredClassLibrary\obj\Debug\netstandard2.0\AlfredClassLibrary.csprojAssemblyReference.cache

@@ -82,23 +82,17 @@ namespace Alfred.Models
 		
 		private decimal _CustID;
 		
-		private System.DateTime _Created;
+		private string _CustName;
 		
 		private System.DateTime _LastSeen;
 		
 		private decimal _TotalNoOfOrders;
 		
-		private decimal _BasketSum;
-		
 		private decimal _BasketAvg;
-		
-		private decimal _PriceSum;
 		
 		private decimal _PriceAvg;
 		
 		private string _CustStatus;
-		
-		private string _CustName;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -106,24 +100,18 @@ namespace Alfred.Models
     partial void OnCreated();
     partial void OnCustIDChanging(decimal value);
     partial void OnCustIDChanged();
-    partial void OnCreatedChanging(System.DateTime value);
-    partial void OnCreatedChanged();
+    partial void OnCustNameChanging(string value);
+    partial void OnCustNameChanged();
     partial void OnLastSeenChanging(System.DateTime value);
     partial void OnLastSeenChanged();
     partial void OnTotalNoOfOrdersChanging(decimal value);
     partial void OnTotalNoOfOrdersChanged();
-    partial void OnBasketSumChanging(decimal value);
-    partial void OnBasketSumChanged();
     partial void OnBasketAvgChanging(decimal value);
     partial void OnBasketAvgChanged();
-    partial void OnPriceSumChanging(decimal value);
-    partial void OnPriceSumChanged();
     partial void OnPriceAvgChanging(decimal value);
     partial void OnPriceAvgChanged();
     partial void OnCustStatusChanging(string value);
     partial void OnCustStatusChanged();
-    partial void OnCustNameChanging(string value);
-    partial void OnCustNameChanged();
     #endregion
 		
 		public Customer()
@@ -151,22 +139,22 @@ namespace Alfred.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Created", DbType="Date NOT NULL")]
-		public System.DateTime Created
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CustName", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		public string CustName
 		{
 			get
 			{
-				return this._Created;
+				return this._CustName;
 			}
 			set
 			{
-				if ((this._Created != value))
+				if ((this._CustName != value))
 				{
-					this.OnCreatedChanging(value);
+					this.OnCustNameChanging(value);
 					this.SendPropertyChanging();
-					this._Created = value;
-					this.SendPropertyChanged("Created");
-					this.OnCreatedChanged();
+					this._CustName = value;
+					this.SendPropertyChanged("CustName");
+					this.OnCustNameChanged();
 				}
 			}
 		}
@@ -211,26 +199,6 @@ namespace Alfred.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BasketSum", DbType="Decimal(18,0) NOT NULL")]
-		public decimal BasketSum
-		{
-			get
-			{
-				return this._BasketSum;
-			}
-			set
-			{
-				if ((this._BasketSum != value))
-				{
-					this.OnBasketSumChanging(value);
-					this.SendPropertyChanging();
-					this._BasketSum = value;
-					this.SendPropertyChanged("BasketSum");
-					this.OnBasketSumChanged();
-				}
-			}
-		}
-		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BasketAvg", DbType="Decimal(18,0) NOT NULL")]
 		public decimal BasketAvg
 		{
@@ -247,26 +215,6 @@ namespace Alfred.Models
 					this._BasketAvg = value;
 					this.SendPropertyChanged("BasketAvg");
 					this.OnBasketAvgChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PriceSum", DbType="Decimal(18,0) NOT NULL")]
-		public decimal PriceSum
-		{
-			get
-			{
-				return this._PriceSum;
-			}
-			set
-			{
-				if ((this._PriceSum != value))
-				{
-					this.OnPriceSumChanging(value);
-					this.SendPropertyChanging();
-					this._PriceSum = value;
-					this.SendPropertyChanged("PriceSum");
-					this.OnPriceSumChanged();
 				}
 			}
 		}
@@ -307,26 +255,6 @@ namespace Alfred.Models
 					this._CustStatus = value;
 					this.SendPropertyChanged("CustStatus");
 					this.OnCustStatusChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CustName", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
-		public string CustName
-		{
-			get
-			{
-				return this._CustName;
-			}
-			set
-			{
-				if ((this._CustName != value))
-				{
-					this.OnCustNameChanging(value);
-					this.SendPropertyChanging();
-					this._CustName = value;
-					this.SendPropertyChanged("CustName");
-					this.OnCustNameChanged();
 				}
 			}
 		}

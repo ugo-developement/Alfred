@@ -3,15 +3,15 @@
   <Table Name="dbo.Customer" Member="Customers">
     <Type Name="Customer">
       <Column Name="CustID" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Created" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="CustName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <!--<Column Name="Created" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />-->
       <Column Name="LastSeen" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
       <Column Name="TotalNoOfOrders" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
-      <Column Name="BasketSum" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <!--<Column Name="BasketSum" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />-->
       <Column Name="BasketAvg" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
-      <Column Name="PriceSum" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <!--<Column Name="PriceSum" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />-->
       <Column Name="PriceAvg" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
       <Column Name="CustStatus" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="CustName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
 </Database>
