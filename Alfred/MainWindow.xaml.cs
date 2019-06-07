@@ -34,5 +34,15 @@ namespace Alfred
             DataContext = _viewModel;
             log4net.Config.XmlConfigurator.Configure();
         }
+
+        private void Btn_Customers_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Source = new Uri("Views/CustomersView.xaml", UriKind.Relative);
+        }
+
+        private void Btn_Home_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Source = new Uri("Views/HomeView.xaml", UriKind.Relative);
+        }
     }
 }

@@ -32,7 +32,7 @@
                         <RowDefinition/>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-                    <Button x:Name="btn_Home" Style="{DynamicResource MaterialDesignFlatButton}" Grid.Row="0" Content="{materialDesign:PackIcon Kind=Home, Size=48}" Height="Auto"/>
+                    <Button x:Name="btn_Home" Click="Btn_Home_Click"  Style="{DynamicResource MaterialDesignFlatButton}" Grid.Row="0" Content="{materialDesign:PackIcon Kind=Home, Size=48}" Height="Auto"/>
                     <Label x:Name="lbl_Home"
                            Grid.Row="0"
                            Content="Home"
@@ -53,7 +53,7 @@
                            HorizontalAlignment="Center"
                            VerticalAlignment="Top"
                            Style="{DynamicResource MaterialDesignLabel}"/>
-                    <Button x:Name="btn_Customers" Style="{DynamicResource MaterialDesignFlatButton}" Grid.Row="3" Content="{materialDesign:PackIcon Kind=AccountMultiple, Size=48}" Height="Auto" BorderBrush="{x:Null}" BorderThickness="0"/>
+                    <Button x:Name="btn_Customers" Click="Btn_Customers_Click" Style="{DynamicResource MaterialDesignFlatButton}" Grid.Row="3" Content="{materialDesign:PackIcon Kind=AccountMultiple, Size=48}" Height="Auto" BorderBrush="{x:Null}" BorderThickness="0"/>
                     <Label x:Name="lbl_Customers"
                            Grid.Row="3"
                            Content="Customers"
@@ -107,7 +107,7 @@
                 <Label Content="No new notifications or tasks." FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </Grid>
             <Border>
-                <Frame BorderThickness="0,1,0,0" BorderBrush="#DDFFFFFF" Source="/Alfred;component/Views/CustomersView.xaml"/>
+                <Frame x:Name="frame" BorderThickness="0,1,0,0" BorderBrush="#DDFFFFFF" Source="/Alfred;component/Views/HomeView.xaml" NavigationUIVisibility="Hidden"/>
             </Border>
         </DockPanel>
     </local:DpiDecorator>
