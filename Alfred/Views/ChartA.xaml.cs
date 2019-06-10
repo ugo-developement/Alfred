@@ -1,9 +1,9 @@
-﻿using LiveCharts;
+﻿using Alfred.ViewModels;
+using LiveCharts;
 using LiveCharts.Wpf;
+using System;
 using System.Collections.Generic;
 using System.Windows.Controls;
-using Alfred.ViewModels;
-using System;
 
 namespace Alfred.Views
 {
@@ -32,7 +32,7 @@ namespace Alfred.Views
 
             SeriesCollection[0].Values.Add(countList[5]);
 
-            Labels = new[] { "0 - 10", "10 - 15", "15 - 20", "20 - 25", "25 - 30", "over 30"};
+            Labels = new[] { "0 - 10", "10 - 15", "15 - 20", "20 - 25", "25 - 30", "over 30" };
             Formatter = value => value.ToString("N");
 
             DataContext = this;
