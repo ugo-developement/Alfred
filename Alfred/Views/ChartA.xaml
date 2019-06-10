@@ -8,13 +8,14 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <lvc:CartesianChart Series="{Binding SeriesCollection}" LegendLocation="Right">
-            <lvc:CartesianChart.AxisY>
-                <lvc:Axis Title="Revenue" LabelFormatter="{Binding YFormatter}"/>
-            </lvc:CartesianChart.AxisY>
+        <lvc:CartesianChart 
+            Series="{Binding SeriesCollection}">
             <lvc:CartesianChart.AxisX>
-                <lvc:Axis Title="Month" Labels="{Binding Labels}"/>
+                <lvc:Axis Title="Range of the Total Price for the Orders in USD" Labels="{Binding Labels}" Foreground="#FFAAAAAA"/>
             </lvc:CartesianChart.AxisX>
+            <lvc:CartesianChart.AxisY>
+                <lvc:Axis Title="Number Of Orders (Founding to Present)" LabelFormatter="{Binding Formatter}"/>
+            </lvc:CartesianChart.AxisY>
         </lvc:CartesianChart>
     </Grid>
 </UserControl>

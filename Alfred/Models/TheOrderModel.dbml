@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="benDover" Class="TheOrderModelDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=10.1.10.114,1434;Initial Catalog=benDover;Persist Security Info=True;User ID=ugoadmin" SettingsObjectName="Alfred.Properties.Settings" SettingsPropertyName="benDoverConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.theORDER" Member="theORDERs">
+    <Type Name="theORDER">
+      <Column Name="OrderID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="invoiceNo" Type="System.Decimal" DbType="Decimal(5,0)" CanBeNull="true" />
+      <Column Name="oTimeStamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="oStatus" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="PayInfo" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Subtotal" Type="System.Decimal" DbType="Decimal(8,0)" CanBeNull="true" />
+      <Column Name="Total" Type="System.Decimal" DbType="Decimal(8,0) NOT NULL" CanBeNull="false" />
+      <Column Name="BasketSize" Type="System.Decimal" DbType="Decimal(5,0) NOT NULL" CanBeNull="false" />
+      <Column Name="CustID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="OrderListID" Type="System.Decimal" DbType="Decimal(6,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
