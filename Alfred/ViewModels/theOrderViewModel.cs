@@ -17,8 +17,7 @@ namespace Alfred.ViewModels
                 q.ToList();
 
                 int zeroToTen = 0, tenToFteen = 0, fteenToTwenty = 0,
-                    twentyToTFive = 0, tFiveToThrity = 0, overThirty = 0,
-                    errorsTotaling = 0;
+                    twentyToTFive = 0, tFiveToThrity = 0, overThirty = 0;
 
                 foreach (var z in q)
                 {
@@ -47,10 +46,6 @@ namespace Alfred.ViewModels
                     {
                         overThirty++;
                     }
-                    else
-                    {
-                        errorsTotaling++;
-                    }
                 }
 
                 List<int> countList = new List<int>
@@ -60,8 +55,7 @@ namespace Alfred.ViewModels
                     fteenToTwenty,
                     twentyToTFive,
                     tFiveToThrity,
-                    overThirty,
-                    errorsTotaling
+                    overThirty
                 };
 
                 return countList;
