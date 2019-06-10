@@ -9,7 +9,7 @@ namespace Alfred.ViewModels
 {
     class CustomerGridViewModel : BindableBase
     {
-        public int amount_to_show = 10;
+        public int amount_to_show = 50;
         public IEnumerable<Customer> FillGrid()
         {
             using(DataClasses1DataContext db = new DataClasses1DataContext("Data Source=10.1.10.114,1434;Initial Catalog=TestDB;Persist Security Info=True;User ID=ugoadmin;Password=ugo-2019"))
