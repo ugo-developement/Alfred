@@ -44,5 +44,16 @@ namespace Alfred.Properties {
                 return ((string)(this["TestDBConnectionString1"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=10.1.10.114,1434;Initial Catalog=benDover;Persist Security Info=True;" +
+            "User ID=ugoadmin;Password=ugo-2019")]
+        public string benDoverConnectionString {
+            get {
+                return ((string)(this["benDoverConnectionString"]));
+            }
+        }
     }
 }

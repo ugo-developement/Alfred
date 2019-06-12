@@ -12,7 +12,7 @@
         xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
         Title="Alfred" Height="600" Width="800"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
-        Background="#FF303030"
+        Background="#FFE4E4E4"
         TextElement.FontWeight="Medium"
         TextElement.FontSize="14"
         ShowTitleBar="True"
@@ -21,8 +21,8 @@
         >
     <local:DpiDecorator>
         <DockPanel>
-            <Border BorderThickness="0,0,1,0" BorderBrush="#DDFFFFFF">
-                <Grid DockPanel.Dock="Left" Width="180" Background="#FF303030" >
+            <Border BorderThickness="0,0,1,0" BorderBrush="#FFFFFF">
+                <Grid DockPanel.Dock="Left" Width="180" Background="#FFE4E4E4" >
                     <Grid.RowDefinitions>
                         <RowDefinition/>
                         <RowDefinition/>
@@ -32,49 +32,49 @@
                         <RowDefinition/>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-                    <Button x:Name="btn_Home" Style="{DynamicResource MaterialDesignFlatButton}" Grid.Row="0" Content="{materialDesign:PackIcon Kind=Home, Size=48}" Height="Auto"/>
+                    <Button x:Name="btn_Home" Click="Btn_Home_Click" Foreground="#FF000000"  Style="{DynamicResource MaterialDesignFlatButton}" Grid.Row="0" Content="{materialDesign:PackIcon Kind=Home, Size=48}" Height="Auto"/>
                     <Label x:Name="lbl_Home"
                            Grid.Row="0"
                            Content="Home"
                            HorizontalAlignment="Center"
                            VerticalAlignment="Top"
                            Style="{DynamicResource MaterialDesignLabel}"/>
-                    <Button x:Name="btn_Sales" Style="{DynamicResource MaterialDesignFlatButton}" Grid.Row="1" Content="{materialDesign:PackIcon Kind=CashMultiple, Size=48}" Height="Auto"/>
+                    <Button x:Name="btn_Sales" Foreground="#FF000000" Style="{DynamicResource MaterialDesignFlatButton}" Grid.Row="1" Content="{materialDesign:PackIcon Kind=CashMultiple, Size=48}" Height="Auto"/>
                     <Label x:Name="lbl_Sales"
                            Grid.Row="1"
                            Content="Sales"
                            HorizontalAlignment="Center"
                            VerticalAlignment="Top"
                            Style="{DynamicResource MaterialDesignLabel}"/>
-                    <Button x:Name="btn_Refund" Style="{DynamicResource MaterialDesignFlatButton}" Grid.Row="2" Content="{materialDesign:PackIcon Kind=CashRefund, Size=48}" Height="Auto"/>
+                    <Button x:Name="btn_Refund" Foreground="#FF000000" Style="{DynamicResource MaterialDesignFlatButton}" Grid.Row="2" Content="{materialDesign:PackIcon Kind=CashRefund, Size=48}" Height="Auto"/>
                     <Label x:Name="lbl_Refund"
                            Grid.Row="2"
                            Content="Refund"
                            HorizontalAlignment="Center"
                            VerticalAlignment="Top"
                            Style="{DynamicResource MaterialDesignLabel}"/>
-                    <Button x:Name="btn_Customers" Style="{DynamicResource MaterialDesignFlatButton}" Grid.Row="3" Content="{materialDesign:PackIcon Kind=AccountMultiple, Size=48}" Height="Auto" BorderBrush="{x:Null}" BorderThickness="0"/>
+                    <Button x:Name="btn_Customers" Click="Btn_Customers_Click" Foreground="#FF000000" Style="{DynamicResource MaterialDesignFlatButton}" Grid.Row="3" Content="{materialDesign:PackIcon Kind=AccountMultiple, Size=48}" Height="Auto" BorderBrush="{x:Null}" BorderThickness="0"/>
                     <Label x:Name="lbl_Customers"
                            Grid.Row="3"
                            Content="Customers"
                            HorizontalAlignment="Center"
                            VerticalAlignment="Top"
                            Style="{DynamicResource MaterialDesignLabel}"/>
-                    <Button x:Name="btn_Inventory" Style="{DynamicResource MaterialDesignFlatButton}" Grid.Row="4" Content="{materialDesign:PackIcon Kind=PackageVariant, Size=48}" Height="Auto"/>
+                    <Button x:Name="btn_Inventory" Foreground="#FF000000" Style="{DynamicResource MaterialDesignFlatButton}" Grid.Row="4" Content="{materialDesign:PackIcon Kind=PackageVariant, Size=48}" Height="Auto"/>
                     <Label x:Name="lbl_Inventory"
                            Grid.Row="4"
                            Content="Inventory"
                            HorizontalAlignment="Center"
                            VerticalAlignment="Top"
                            Style="{DynamicResource MaterialDesignLabel}"/>
-                    <Button x:Name="btn_PushNotifs" Style="{DynamicResource MaterialDesignFlatButton}" Grid.Row="5" Content="{materialDesign:PackIcon Kind=AddAlert, Size=48}" Height="Auto" />
+                    <Button x:Name="btn_PushNotifs" Foreground="#FF000000" Style="{DynamicResource MaterialDesignFlatButton}" Grid.Row="5" Content="{materialDesign:PackIcon Kind=AddAlert, Size=48}" Height="Auto" />
                     <Label x:Name="lbl_PushNotifs"
                            Grid.Row="5"
                            Content="Alerts &amp; Tasks"
                            HorizontalAlignment="Center"
                            VerticalAlignment="Top"
                            Style="{DynamicResource MaterialDesignLabel}"/>
-                    <Button x:Name="btn_Settings" Style="{DynamicResource MaterialDesignFlatButton}" Grid.Row="6" Content="{materialDesign:PackIcon Kind=SettingsApplications, Size=48}" Height="Auto"/>
+                    <Button x:Name="btn_Settings" Foreground="#FF000000" Style="{DynamicResource MaterialDesignFlatButton}" Grid.Row="6" Content="{materialDesign:PackIcon Kind=SettingsApplications, Size=48}" Height="Auto"/>
                     <Label x:Name="lbl_Settings"
                            Grid.Row="6"
                            Content="Settings"
@@ -83,7 +83,7 @@
                            Style="{DynamicResource MaterialDesignLabel}"/>
                 </Grid>
             </Border>
-            <Grid DockPanel.Dock="Top">
+            <Grid DockPanel.Dock="Top" Background="Green">
 
                 <Grid Height="30" HorizontalAlignment="Right" Margin="1,0,0,1">
 
@@ -92,7 +92,7 @@
                         <ColumnDefinition Width="30"/>
                         <ColumnDefinition Width="30"/>
                     </Grid.ColumnDefinitions>
-                    <Border BorderBrush="#DDFFFFFF" Grid.ColumnSpan="3" BorderThickness="1,0,0,1"/>
+                    <Border BorderBrush="#FFFFFF" Grid.ColumnSpan="3" BorderThickness="1,0,0,1"/>
                     <Button Style="{DynamicResource MaterialDesignFloatingActionDarkButton}" Content="{materialDesign:PackIcon Kind=WindowMinimize}" SnapsToDevicePixels="True" Padding="0" Width="Auto" Height="Auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     <Button Style="{DynamicResource MaterialDesignFloatingActionDarkButton}" Content="{materialDesign:PackIcon Kind=WindowMaximize}" SnapsToDevicePixels="True" Padding="0" Width="Auto" Height="Auto" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1"/>
                     <Button Style="{DynamicResource MaterialDesignFloatingActionDarkButton}" Content="{materialDesign:PackIcon Kind=WindowClose}" SnapsToDevicePixels="True" Padding="0" Width="Auto" Height="Auto" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2"/>
@@ -101,13 +101,13 @@
                 </Grid>
 
             </Grid>
-            <Grid DockPanel.Dock="Top">
-                <Button Style="{DynamicResource MaterialDesignFlatButton}" Content="{materialDesign:PackIcon Kind=Bell, Size=30}" Padding="0" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" MinWidth="45" MinHeight="45"/>
+            <Grid DockPanel.Dock="Top" Background="Green">
+                <Button Foreground="#FF000000" Style="{DynamicResource MaterialDesignFlatButton}" Content="{materialDesign:PackIcon Kind=Bell, Size=30}" Padding="0" HorizontalAlignment="Left" VerticalAlignment="Center" MinWidth="45" MinHeight="45"/>
                 <Label Content="Pre-Alpha v0.0.1" VerticalAlignment="Top" HorizontalAlignment="Right" Foreground="Black" Opacity=".2" FontSize="10"/>
                 <Label Content="No new notifications or tasks." FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </Grid>
             <Border>
-                <Frame BorderThickness="0,1,0,0" BorderBrush="#DDFFFFFF" Source="/Alfred;component/Views/CustomersView.xaml"/>
+                <Frame x:Name="frame" BorderThickness="0,1,0,0" BorderBrush="#FFFFFF" Source="/Alfred;component/Views/HomeView.xaml" NavigationUIVisibility="Hidden"/>
             </Border>
         </DockPanel>
     </local:DpiDecorator>

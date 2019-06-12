@@ -3,11 +3,11 @@
 namespace Alfred.Views
 {
     /// <summary>
-    /// Interaction logic for CustomersView.xaml
+    /// Interaction logic for HomeView.xaml
     /// </summary>
-    public partial class CustomersView : Page
+    public partial class HomeView : Page
     {
-        public CustomersView()
+        public HomeView()
         {
             InitializeComponent();
         }

@@ -17,9 +17,111 @@
     </Page.Resources>
 
     <Grid Height="Auto" Width="Auto">
-        <DataGrid IsReadOnly="True" Height="Auto" Width="Auto" ItemsSource="{Binding Source={StaticResource getCustomers}}" IsSynchronizedWithCurrentItem="True">
-
-
-        </DataGrid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".1*"/>
+            <RowDefinition Height=".3*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Content="Total Customers" FontSize="16"
+               HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Grid.Row="0" Grid.Column="1" Content="New Customers" FontSize="16"
+               HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Grid.Row="0" Grid.Column="2" Content="Avg Account Lifespan (weeks)" FontSize="16"
+               HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Content="Active" FontSize="14"
+                   Grid.Column="0" Grid.Row="0"
+                   HorizontalAlignment="Right"/>
+            <Label Content="Dormant" FontSize="14"
+                   Grid.Column="0" Grid.Row="1"
+                   HorizontalAlignment="Right"/>
+            <Label Content="Total" FontSize="14"
+                   Grid.Column="0" Grid.Row="2"
+                   HorizontalAlignment="Right"/>
+            <Label Content="0" FontSize="14" x:Name="TC_Act"
+                   Grid.Column="1" Grid.Row="0"/>
+            <Label Content="0" FontSize="14" x:Name="TC_Dor"
+                   Grid.Column="1" Grid.Row="1"/>
+            <Label Content="0" FontSize="14" x:Name="TC_Tot"
+                   Grid.Column="1" Grid.Row="2"/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Content="Today" FontSize="14"
+                   Grid.Column="0" Grid.Row="0"
+                   HorizontalAlignment="Right"/>
+            <Label Content="Week" FontSize="14"
+                   Grid.Column="0" Grid.Row="1"
+                   HorizontalAlignment="Right"/>
+            <Label Content="Month" FontSize="14"
+                   Grid.Column="0" Grid.Row="2"
+                   HorizontalAlignment="Right"/>
+            <Label Content="Year" FontSize="14"
+                   Grid.Column="0" Grid.Row="3"
+                   HorizontalAlignment="Right"/>
+            <Label Content="0" FontSize="14" x:Name="NC_Today"
+                   Grid.Column="1" Grid.Row="0"/>
+            <Label Content="0" FontSize="14" x:Name="NC_Week"
+                   Grid.Column="1" Grid.Row="1"/>
+            <Label Content="0" FontSize="14" x:Name="NC_Month"
+                   Grid.Column="1" Grid.Row="2"/>
+            <Label Content="0" FontSize="14" x:Name="NC_Year"
+                   Grid.Column="1" Grid.Row="3"/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Content="Active" FontSize="14"
+                   Grid.Column="0" Grid.Row="0"
+                   HorizontalAlignment="Right"/>
+            <Label Content="Dormant" FontSize="14"
+                   Grid.Column="0" Grid.Row="1"
+                   HorizontalAlignment="Right"/>
+            <Label Content="Total" FontSize="14"
+                   Grid.Column="0" Grid.Row="2"
+                   HorizontalAlignment="Right"/>
+            <Label Content="0" FontSize="14" x:Name="AAL_Act"
+                   Grid.Column="1" Grid.Row="0"/>
+            <Label Content="0" FontSize="14" x:Name="AAL_Dor"
+                   Grid.Column="1" Grid.Row="1"/>
+            <Label Content="0" FontSize="14" x:Name="AAL_Tot"
+                   Grid.Column="1" Grid.Row="2"/>
+        </Grid>
+        <Label Grid.Row="0" Grid.Column="1"/>
+        <DataGrid Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="6" 
+                  IsReadOnly="True"
+                  Height="Auto" Width="Auto"
+                  ItemsSource="{Binding Source={StaticResource getCustomers}}"
+                  IsSynchronizedWithCurrentItem="True"/>
     </Grid>
 </Page>

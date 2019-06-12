@@ -102,14 +102,32 @@
       <DependentUpon>CustomerListModelModel.dbml</DependentUpon>
     </Compile>
     <Compile Include="Models\RelayCommandModel.cs" />
+    <Compile Include="Models\TheOrderModel.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TheOrderModel.dbml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\BindableBase.cs" />
     <Compile Include="ViewModels\CurrentUserViewModel.cs" />
     <Compile Include="ViewModels\CustomerGridViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\ButtonViewModelBase.cs" />
+    <Compile Include="ViewModels\theOrderViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
+    <Compile Include="Views\ChartA.xaml.cs">
+      <DependentUpon>ChartA.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ChartB.xaml.cs">
+      <DependentUpon>ChartB.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\CustomersView.xaml.cs">
       <DependentUpon>CustomersView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomeSalesTable.xaml.cs">
+      <DependentUpon>HomeSalesTable.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomeView.xaml.cs">
+      <DependentUpon>HomeView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\LoginView.xaml.cs">
       <DependentUpon>LoginView.xaml</DependentUpon>
@@ -126,7 +144,23 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\ChartA.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ChartB.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\CustomersView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\HomeSalesTable.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\HomeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -171,6 +205,14 @@
     <None Include="Models\CustomerListModelModel.dbml.layout">
       <DependentUpon>CustomerListModelModel.dbml</DependentUpon>
     </None>
+    <None Include="Models\TheOrderModel.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>TheOrderModel.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Models\TheOrderModel.dbml.layout">
+      <DependentUpon>TheOrderModel.dbml</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -185,6 +227,15 @@
   <ItemGroup>
     <PackageReference Include="Extended.Wpf.Toolkit">
       <Version>3.5.0</Version>
+    </PackageReference>
+    <PackageReference Include="Highsoft.Highcharts">
+      <Version>7.0.3.11</Version>
+    </PackageReference>
+    <PackageReference Include="LiveCharts">
+      <Version>0.9.7</Version>
+    </PackageReference>
+    <PackageReference Include="LiveCharts.Wpf">
+      <Version>0.9.7</Version>
     </PackageReference>
     <PackageReference Include="log4net">
       <Version>2.0.8</Version>
