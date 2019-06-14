@@ -116,7 +116,7 @@ namespace Alfred.ViewModels
             double resultsOne = new double(), resultsTwo = new double(), resultsThree = new double();
             using (SqlConnection db = new SqlConnection("Data Source=10.1.10.114,1434;Initial Catalog=benDover;Persist Security Info=True;User ID=ugoadmin;Password=ugo-2019"))
             {
-                string query = "SELECT COUNT(Total) as TotalWeek, AVG(BasketSize) as AvgBasketSize, AVG(Total) as AvgOrderTotal FROM theORDER WHERE(GETDATE() - YEAR(1)) < oTimeStamp";
+                string query = "SELECT COUNT(Total) as TotalWeek, AVG(BasketSize) as AvgBasketSize, AVG(Total) as AvgOrderTotal FROM theORDER WHERE YEAR(oTimeStamp) = YEAR(GETDATE())";
                 SqlCommand command = new SqlCommand(query, db);
                 db.Open();
                 SqlDataReader reader = command.ExecuteReader();
