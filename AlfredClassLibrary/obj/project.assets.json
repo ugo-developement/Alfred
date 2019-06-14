@@ -828,11 +828,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\Alfred\\AlfredClassLibrary\\AlfredClassLibrary.csproj",
+      "projectUniqueName": "C:\\AlfredTakeTwo\\AlfredClassLibrary\\AlfredClassLibrary.csproj",
       "projectName": "AlfredClassLibrary",
-      "projectPath": "C:\\Users\\User\\Source\\Repos\\Alfred\\AlfredClassLibrary\\AlfredClassLibrary.csproj",
+      "projectPath": "C:\\AlfredTakeTwo\\AlfredClassLibrary\\AlfredClassLibrary.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Source\\Repos\\Alfred\\AlfredClassLibrary\\obj\\",
+      "outputPath": "C:\\AlfredTakeTwo\\AlfredClassLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
