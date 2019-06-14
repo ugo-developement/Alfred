@@ -110,6 +110,7 @@
     <Compile Include="ViewModels\BindableBase.cs" />
     <Compile Include="ViewModels\CurrentUserViewModel.cs" />
     <Compile Include="ViewModels\CustomerGridViewModel.cs" />
+    <Compile Include="ViewModels\HomeSalesTableViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\ButtonViewModelBase.cs" />
     <Compile Include="ViewModels\theOrderViewModel.cs" />

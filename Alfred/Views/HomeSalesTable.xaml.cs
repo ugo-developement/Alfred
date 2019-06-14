@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Alfred.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,12 @@ namespace Alfred.Views
         public HomeSalesTable()
         {
             InitializeComponent();
+
+            List<double> daycounts = HomeSalesTableViewModel.ReadData();
+
+            DayOrderCount.Content = daycounts[0];
+            DayAvgBasket.Content = daycounts[1];
+            DayAvgPrice.Content = string.Format("${0}", daycounts[2]);
         }
     }
 }
