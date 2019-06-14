@@ -26,10 +26,26 @@ namespace Alfred.Views
             InitializeComponent();
 
             List<double> daycounts = HomeSalesTableViewModel.ReadData();
+            List<double> weekcounts = HomeSalesTableViewModel.ReadDataWeek();
+            List<double> monthcounts = HomeSalesTableViewModel.ReadDataMonth();
+            List<double> yearcounts = HomeSalesTableViewModel.ReadDataYear();
+
 
             DayOrderCount.Content = daycounts[0];
             DayAvgBasket.Content = daycounts[1];
             DayAvgPrice.Content = string.Format("${0}", daycounts[2]);
+
+            WeekOrderCount.Content = weekcounts[0];
+            WeekAvgBasket.Content = weekcounts[1];
+            WeekAvgPrice.Content = string.Format("${0}", weekcounts[2]);
+
+            MonthOrderCount.Content = monthcounts[0];
+            MonthAvgBasket.Content = monthcounts[1];
+            MonthAvgPrice.Content = string.Format("${0}", monthcounts[2]);
+
+            YearOrderCount.Content = yearcounts[0];
+            YearAvgBasket.Content = yearcounts[1];
+            YearAvgPrice.Content = string.Format("${0}", yearcounts[2]);
         }
     }
 }

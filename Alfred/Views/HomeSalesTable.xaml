@@ -28,17 +28,17 @@
                HorizontalAlignment="Center" 
                VerticalAlignment="Center" 
                Grid.Row="0" Grid.Column="1"/>
-        <Label Content="This Week" FontSize="20"
+        <Label Content="Trailing Week" FontSize="20"
                Foreground="#FF000000"
                HorizontalAlignment="Center" 
                VerticalAlignment="Center" 
                Grid.Row="0" Grid.Column="2"/>
-        <Label Content="This Month" FontSize="20"
+        <Label Content="Trailing Month" FontSize="20"
                Foreground="#FF000000"
                HorizontalAlignment="Center" 
                VerticalAlignment="Center" 
                Grid.Row="0" Grid.Column="3"/>
-        <Label Content="This Year" FontSize="20"
+        <Label Content="Trailing Year" FontSize="20"
                Foreground="#FF000000"
                HorizontalAlignment="Center" 
                VerticalAlignment="Center" 
